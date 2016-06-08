@@ -80,7 +80,7 @@ I've spent about 6 hours on the project consist of:
 I was about to create a classic Android Application using old method of all codes in a single MainActivity because of time shortage!
 But I prefer to be a professional and spend more time to have a clean-code using MVP and Dagger.
 
-Having one presenter for both menu and game was cause by time shortage, and if I had more time I would separate them because of their different functionality.
+Having one presenter for both menu and game was caused by time shortage, and if I had more time I would separate them because of their different functionality.
 
 I always prefer to user libraries that makes development easier and let me think more about the logic of the Application and what to do, instead of how to do.
 
@@ -93,4 +93,4 @@ By the way, because of implementing MVP methodology, Unit testing is so easy and
 
 I would also refactor some parts that was written too fast, and somehow are not clean. (for instance TimeManager only holds the time data, and time is being managed with presenter!)
 
-All games must have a music and sound effects as well as visual effects to make it more tangible, I would add more sound and visual effects to game in future.
+All games must have a related music and sound effects as well as visual effects to make it more tangible, maybe I would add more sound and visual effects to game in future.
