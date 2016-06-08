@@ -1,0 +1,2 @@
+include ':words-game', ':core-lib'
+project(':words-game').projectDir = new File('app')

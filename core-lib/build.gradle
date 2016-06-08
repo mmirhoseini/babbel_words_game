@@ -1,0 +1,29 @@
+apply plugin: 'java'
+apply plugin: 'me.tatarka.retrolambda'
+
+
+configurations {
+    provided
+}
+
+sourceSets {
+    main {
+        compileClasspath += configurations.provided
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile rootProject.ext.testLibraries.junit
+
+    compile rootProject.ext.libraries.rxjava
+
+    compile rootProject.ext.libraries.gson
+
+    compile rootProject.ext.libraries.dagger
+    provided rootProject.ext.aptLibraries.daggerCompiler
+
+    compile rootProject.ext.aptLibraries.autovalueCompiler
+    provided rootProject.ext.aptLibraries.autovalueCompiler
+    provided rootProject.ext.aptLibraries.autovalueGsonCompiler
+}

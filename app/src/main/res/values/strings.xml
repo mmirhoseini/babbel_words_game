@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Babbel Words Game</string>
+    <string name="welcome">Welcome to Words Game</string>
+    <string name="start">Start</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="highscore">HighScore</string>
+    <string name="timer">Timer</string>
+    <string name="score">Score</string>
+    <string name="gameover_title">GameOver</string>
+    <string name="restart">Restart</string>
+    <string name="back">Back</string>
+    <string name="new_record">NEW RECORD!!!</string>
+    <string name="gameover_message">Your score is %1d</string>
+</resources>
