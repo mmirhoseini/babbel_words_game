@@ -11,7 +11,7 @@ This application was created by [Mohsen Mirhoseini Argi](http://mirhoseini.com),
 *       Version:  1.0
 * Last Update: Wed Jun 8, 2016
 
-![Screenshot](screenshot1.png)![Screenshot](screenshot2.png)
+![Screenshot](screenshot1.png =250x)![Screenshot](screenshot2.png =250x)
 
 --------------------
 ### Development Tools ###
@@ -73,7 +73,7 @@ To make the game more juicy and having a better UX, I have used Android animatio
 
 I've spent about 6 hours on the project consist of:
 <ol>
-<li>About an hour thinking about the UI/UX and how to manage game parts like time, data, score, ...</li>
+<li>About an hour thinking about the UI/UX and how to manage game parts like time, words data, score, ...</li>
 <li>About 30 minutes preparing whole project structure, core-lib sub-module, dependencies that I'm going to use and implementing MVP using Dagger.</li>
 <li>About 1 hour developing the View in app module and about 3 hour developing logic and algorithm of the game in core-lib module.</li>
 <li>About 30 minutes to complete documentation and push to GitHub</li>
