@@ -25,31 +25,27 @@ This application was created by [Mohsen Mirhoseini Argi](http://mirhoseini.com),
 ### Dependencies ###
 
 * Android Support Tools (appcompat, vector ) v23.4.0
-* Dagger 2.4
-* RxJava 1.1.3
-* RxAndroid 1.1.0
+* Dagger v2.4
+* RxJava v1.1.3
+* RxAndroid v1.1.0
 * Butterknife v8.0.1
-* Timber 4.1.2
-* AutoValue 1.2
+* Timber v4.1.2
+* AutoValue v1.2
 * AppSettings v1.0.1
 * AndroidUtils v1.0.0
-* retrolambda 3.2.5
-* android-apt 1.8
+* Retrolambda v3.2.5
+* android-apt v1.8
 
 --------------------
-### Important Notes ###
-
-The application has one Main Activity which is responsible for presenting whole game view consist of two fragments, MenuFragment and GameFragment.
-
-All activity lifecycle and player behaviours are implemented, and according to device size and situation user get a good view and UX.
-
-There was no time for adding some Test Cases to test application, but because of implementing MVP methodology Unit testing is so easy and we can also add some Android UI Instrumentation Test.
-
 ### Application Structure ###
 
 The Application implemented and structured bases on the MVP pattern best practice, contributed by [Antonio Leiva](http://antonioleiva.com/mvp-android/).
 
 Whole game functionality is implemented in "Core-Lib" module using pure Java. The "App" module contain all codes required for game to load on Android.
+
+The application has one Main Activity which is responsible for presenting whole game views consist of two fragments. (Menu and Game Fragments)
+
+All activity and fragments lifecycle and player behaviours are implemented, and according to device size and situation user get a good view and UX.
 
 The view (MainActivity), contain a reference to the presenter. The only thing that the view will do is calling a method from the presenter every time there is an interface action or cominicate with it's Fragments.
 
@@ -84,12 +80,15 @@ I've spent about 6 hours on the project consist of:
 I was about to create a classic Android Application using old method of all codes in a single MainActivity because of time shortage!
 But I prefer to be a professional and spend more time to have a clean-code using MVP and Dagger.
 
+Having one presenter for both menu and game was cause by time shortage, and if I had more time I would separate them because of their different functionality.
+
 I always prefer to user libraries that makes development easier and let me think more about the logic of the Application and what to do, instead of how to do.
 
 I am also a fan of Functional Programming and always use Retrolambda to use this ability in all Android versions, and try to think more functional.
 
 ### Improvements ###
 
-Fist of all, I would add some testes to check my application functionality during development and or adding new features.
+Fist of all, I would add some testes to check my application functionality during development and avoid side effects while adding new features.
+By the way, because of implementing MVP methodology, Unit testing is so easy and we can also add some Android UI Instrumentation Tests using Robolectric.
 
-I would also refactor some parts that was written too fast, and somehow are not very clean. (for instance TimeManager only holds the time data! and time is being managed with presenter.)
+I would also refactor some parts that was written too fast, and somehow are not clean. (for instance TimeManager only holds the time data, and time is being managed with presenter!)
