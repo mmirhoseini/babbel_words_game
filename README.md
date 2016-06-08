@@ -49,7 +49,7 @@ All activity and fragments lifecycle and player behaviours are implemented, and 
 
 The view (MainActivity), contain a reference to the presenter. The only thing that the view will do is calling a method from the presenter every time there is an interface action or communicate with it's Fragments.
 
-The presenter (GamePresenter), is responsible to act as the middle man between view and game deferent parts(namely ScoreManager, TimeManager,...). It retrieves words.json data using Gson from view and load it to Model and handle game behaviour. It also decides what happens when user interact with the view.
+The presenter (GamePresenter), is responsible to act as the middle man between view and game different parts (namely ScoreManager, TimeManager, ...). It retrieves data from "words.json" using Gson and load it to Model and handle game behaviours. It also decides what happens when user interact with the view.
 
 Time and Questions are managed by [RxJava](https://github.com/ReactiveX/RxJava) & [RxAndroid](https://github.com/ReactiveX/RxAndroid) contributed by [ReactiveX](http://reactivex.io).
 
