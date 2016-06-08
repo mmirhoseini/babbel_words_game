@@ -11,7 +11,7 @@ This application was created by [Mohsen Mirhoseini Argi](http://mirhoseini.com),
 *       Version:  1.0
 * Last Update: Wed Jun 8, 2016
 
-![Screenshot](screenshot1.png =250x)![Screenshot](screenshot2.png =250x)
+![Screenshot](screenshot2.png)
 
 --------------------
 ### Development Tools ###
